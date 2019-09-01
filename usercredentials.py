@@ -15,5 +15,7 @@ class users:
         self.firstname = firstname
         self.secondname = secondname
         self.password = password
+    # def store_user(self):
+    #     users.list_user.append(self)
     
 

@@ -14,7 +14,11 @@ class TestUser(unittest.TestCase):
         '''
         self.assertEqual(self.new_user.firstname,'James')
         self.assertEqual(self.new_user.secondname,'Muruiki')
-        self.assertEqual(self.new_user.password,'paswkort')git 
+        self.assertEqual(self.new_user.password,'paswkort')
+    
+    def test_store_user(self):
+        self.new_user.store_user()
+        self.assertEqual(len(user.list_user),1)
 
 if __name__ == '__main__':
     unittest.main()
