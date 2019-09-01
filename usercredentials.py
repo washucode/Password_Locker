@@ -41,7 +41,8 @@ class Credentials:
                 userlogin = user.username
             return userlogin
     
-    
+    def save_credential(self):
+        Credentials.account_credentials.append(self)
 
     
 
