@@ -20,6 +20,12 @@ class TestUser(unittest.TestCase):
     def test_store_user(self):
         self.new_user.store_user()
         self.assertEqual(len(users.list_user),1)
+
+class  TestCredentials (unittest.TestCase):
+
+    def 
+
+
         
 
 if __name__ == '__main__':
