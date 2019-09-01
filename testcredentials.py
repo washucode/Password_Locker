@@ -1,5 +1,5 @@
 import unittest
-from usercredentials import users
+from usercredentials import users, Credentials
 
 class TestUser(unittest.TestCase):
     def setUp(self):
@@ -25,6 +25,11 @@ class  TestCredentials (unittest.TestCase):
 
     def setUp(self):
         self.new_credential = Credentials('marym','dapdjaojd','twitter')
+    
+    def test__init(self):
+        self.assertEqual(self.new_credential.username,'marym')
+        self.assertEqual(self.new_credential.password,'dapdjaojd')
+        self.assertEqual(self.new_credential.account_name,'twitter')
 
 
         
