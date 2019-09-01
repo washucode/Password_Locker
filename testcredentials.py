@@ -23,7 +23,8 @@ class TestUser(unittest.TestCase):
 
 class  TestCredentials (unittest.TestCase):
 
-    def 
+    def setUp(self):
+        self.new_credential = Credentials('marym','dapdjaojd','twitter')
 
 
         
