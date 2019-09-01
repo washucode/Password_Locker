@@ -49,7 +49,13 @@ class  TestCredentials (unittest.TestCase):
                 userlogin = user.username
             return userlogin
 
-        
+    def test_save_credentials(self):
+        '''
+        test if programme can save credentials
+        '''
+        self.new_credential.save_credential()
+        self.assertEqual(len(Credentials.account_credentials),1)
+
 
 if __name__ == '__main__':
     unittest.main()
