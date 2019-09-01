@@ -25,6 +25,8 @@ class users:
 class Credentials:
 
     account_credentials = []
+
+    
     
     def __init__(self,username,password,account_name):
         self.username = username

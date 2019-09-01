@@ -21,7 +21,24 @@ class TestUser(unittest.TestCase):
         self.new_user.store_user()
         self.assertEqual(len(users.list_user),1)
 
+    def tearDown(self):
+        ''' 
+        to undo the tests before this
+        '''
+        users.list_user=[]
+
+
+
 class  TestCredentials (unittest.TestCase):
+
+    def test_user_exists(self):
+        self.new_user = users('James','Muruiki','jmanes','paswkort')
+        self.new_user.store_user()
+
+        for user in users.list_user:
+            if(user.username==username and user.password == password):
+                userlogin = username
+            return userlogin
 
     def setUp(self):
         self.new_credential = Credentials('marym','dapdjaojd','twitter')
