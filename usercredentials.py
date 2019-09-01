@@ -33,6 +33,13 @@ class Credentials:
         self.password = password
         self.account_name = account_name
 
+    @classmethod
+    def user_exits(cls, username,password):
+        userlogin
+        for user in users.list_user:
+            if (user.username == username and user.password == password):
+                userlogin = user.username
+            return userlogin
 
     
 
