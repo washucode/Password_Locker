@@ -6,7 +6,7 @@ class TestUser(unittest.TestCase):
         '''
         Create user before every test
         '''
-        self.new_user = users('James','Muruiki','paswkort')
+        self.new_user = users('James','Muruiki','jmanes','paswkort')
     
     def test__init__(self):
         '''
@@ -15,10 +15,12 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_user.firstname,'James')
         self.assertEqual(self.new_user.secondname,'Muruiki')
         self.assertEqual(self.new_user.password,'paswkort')
+        self.assertEqual(self.new_user.username,'jmanes')
     
     def test_store_user(self):
         self.new_user.store_user()
-        self.assertEqual(len(user.list_user),1)
+        self.assertEqual(len(users.list_user),1)
+        
 
 if __name__ == '__main__':
     unittest.main()
