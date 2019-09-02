@@ -50,6 +50,7 @@ class Credentials:
         password_gen = string.ascii_letters + string.digits
         user_password = ''.join(random.choice(password_gen) for i in range(number))
         return user_password
-
+    
+   
     
 

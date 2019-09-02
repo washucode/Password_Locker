@@ -59,6 +59,12 @@ class  TestCredentials (unittest.TestCase):
     def test_generate_userpassword(self):
         generate_password = Credentials.generate_password(self)
         self.assertTrue(generate_password)
+    
+    def test_display_credentials(self):
+         
+        self.assertEqual(Credentials.display_credentials(),Credentials.account_credentials)
+    
+
 
 
 if __name__ == '__main__':
