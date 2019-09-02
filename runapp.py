@@ -50,4 +50,9 @@ def find_by_account():
     '''
     return Credentials.find_by_account()
 
-
+def remove_credential():
+    '''
+    Function that deletes credential
+    '''
+    Credentials.remove_credential()
+ 
