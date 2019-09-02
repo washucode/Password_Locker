@@ -51,6 +51,9 @@ class Credentials:
         user_password = ''.join(random.choice(password_gen) for i in range(number))
         return user_password
     
-   
+    @classmethod
+    def display_credentials(cls):
+        return cls.account_credentials
+
     
 
