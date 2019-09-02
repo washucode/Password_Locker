@@ -1,22 +1,33 @@
-# Quotes
-A website that allows user to upload,like delete quotes.
+# Password Locker
+A terminal run application that allows user to store account credentials
 
 ## Author
 ESTHER WACHUKA
 
-### Technologies
+##Tech Used
+ * python3.6
+ 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+### SETUP/INSTALLATION
 
-### Link
+####REQUIREMENTS
 
-### DOWNLOADING
+* Python3.6
+* pyperclip
+* pip
 
-* Fork this repository
-* Clone the repository to your local machine
-* Run code . or atom . etc  in your terminal depending on your text editor to open.
-* ng-serve on the terminal to see live website
-* make changes as you please.
+####1. Clone
+  * In your terminal run:
+    $git clone https://github.com/washucode/Password_Locker
+    $cd Password_Locker
+####2. Run Password_Locker
+   * In your terminal:
+     $chmod +x runapp.py
+     $./runapp.py
+####3. Test
+   * In your terminal:
+     $python3.6 usercredentialstest.py
+
 
 ### License
 THis is licensed with MIT
