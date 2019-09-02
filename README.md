@@ -6,7 +6,22 @@ ESTHER WACHUKA
 
 ## Tech Used
  * python3.6
- 
+
+## BDD
+| Behaivour           | Short Code Input| Output|
+|--------------------|------------|-----------------|
+| Run App| $./runapp.py|Welcome to Password Locker:choose cc,lg,ex|
+| Create Account | Typein: cc |Enter firstname,secondname,username,password|
+| Login |TypeIn: lg| Enter username and password|
+| Successful Login| | Choose cc or dc or de or ex|
+| Create new Credential|Typein :cc | Enter account name, username,password choose gn or ep|
+| Generate Password| Typein : gn | Generates password|
+| Enter password | Typein: ep | Enter password|
+| Display Credential | Typein: dc | display list of saved credentials|
+| Delete Credential | Typein : de | Enter account name then delete by accountname|
+| Exit | Typein : ex | Exit current navigation |
+
+
 
 ### SETUP/INSTALLATION
 
