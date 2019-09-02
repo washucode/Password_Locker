@@ -39,7 +39,7 @@ class Credentials:
         self.account_name = account_name
 
     @classmethod
-    def user_exits(cls, username,password):
+    def user_exists(cls, username,password):
         '''
         method to check if user exists
         '''
@@ -55,7 +55,7 @@ class Credentials:
         '''
         Credentials.account_credentials.append(self)
     
-    def generate_password(self,number):
+    def generate_password(number=10):
         '''
         method to generate random password
         '''
