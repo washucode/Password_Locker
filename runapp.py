@@ -44,4 +44,10 @@ def display_credentials():
     '''
     return Credentials.display_credentials()
 
+def find_by_account():
+    '''
+    Function that finds credential by account name
+    '''
+    return Credentials.find_by_account()
+
 
