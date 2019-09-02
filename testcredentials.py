@@ -75,6 +75,17 @@ class  TestCredentials (unittest.TestCase):
         newTestcredential.save_credential()
         foundcredential = Credentials.find_by_account('facebook')
         self.assertEqual(foundcredential,newTestcredential)
+    
+    def test_removecredential(self):
+        '''
+        test if credential can be removed
+        '''
+        self.new_credential.save_credential()
+        newTestcredential = Contact('Doe','does','facebook')
+        newTestcredential.save_credential()
+        newTestcredential.remove_credential()
+        self.assertEqual(len(Credentials.account_credentials),1)
+    
 
 
 
