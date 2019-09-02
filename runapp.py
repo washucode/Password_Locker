@@ -58,11 +58,15 @@ def remove_credential(credential):
 
 def main():
     print('-'*100)
-    print('Welcome to Password Locker')
+
+    print('\t\t\t\tWelcome to Password Locker')
     print('-'*100)
+    print('\n')
     while True:
         print("Use these codes :\n cc-create account \n lg- To login, \n ex- exit password Locker")
+        print(' ')
         short_code = input().lower().strip()
+        print(' ')
         if short_code == 'cc':
             print("Create Password Locker Account:")
             firstname = input("Enter your firstName: ").strip()
@@ -71,7 +75,7 @@ def main():
             password = input("Enter desire password locker password: ").strip()
             store_user(create_user(firstname,secondname,username,password))
             print("\n")
-            print (f" Password Locker created for : {firstname} {secondname} with username : {username} and password: {password}")
+            print (f" Password Locker created for : {firstname} {secondname} with username : {username}  and  password: {password}")
             print("-"*80)
         elif short_code == 'lg':
             
@@ -79,10 +83,13 @@ def main():
             password = input('Enter Your Password:')
             userexists = user_exists(username,password)
             if userexists == username:
+                print('*'*80)
                 print(f"Welcome {username} Choose code to continue")
+                print('*'*80)
                 while True:
-                    print('*'*80)
-                    print('Code:\n cc - Create new credential \n ds- display credentials \n de - delete credential ex- Exit')
+                    print(' ')
+                    print('Code:\n cc - Create new credential \n ds- display credentials \n de - delete credential \n ex- Exit')
+                    print(' ')
                     short_code = input().lower().strip()
                     if short_code == 'cc':
                         print('Enter credential details')
@@ -92,7 +99,7 @@ def main():
                             print('\n')
                             print('Choose option:\n gn for generate password \n en to enter your own password')
                             option = input().lower().strip()
-                            print('*'*80)
+                            print('*'*100)
                             if option == 'gn':
                                 
                                 password = generate_password()
@@ -128,7 +135,7 @@ def main():
                         else :
                             print("That contact does not exist")
                     elif short_code == 'ex':
-                        print(f"Bye {username}")
+                        print(f"Bye")
                         break
             else:
                 print("Login credentials are not right.Try again")
