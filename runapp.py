@@ -55,4 +55,19 @@ def remove_credential():
     Function that deletes credential
     '''
     Credentials.remove_credential()
- 
+
+def main():
+    print('-'*100)
+    print('Welcome to Password Locker')
+    print('-'*100)
+    print("Create Password Locker Account:")
+    firstname = input("Enter your firstName: ").strip()
+    secondname = input("Enter your secondName: ").strip()
+    username = input("Enter desired username: ").strip()
+    password = input("Enter desire password locker password: ").strip()
+    store_user(create_user(firstname,secondname,username,password))
+    print("\n")
+    print (f" Password Locker created for : {firstname} {secondname} with username : {username} and password: {password}")
+    print("-"*80)
+if __name__ == "__main__":
+    main()
