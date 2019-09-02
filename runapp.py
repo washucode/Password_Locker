@@ -13,3 +13,11 @@ def store_user(user):
     '''
     users.store_user(user)
 
+def  user_exists(username,password):
+    '''
+    Function that checks if user exits
+    '''
+    return Credentials.user_exists(username,password)
+
+
+
