@@ -57,13 +57,25 @@ class  TestCredentials (unittest.TestCase):
         self.assertEqual(len(Credentials.account_credentials),1)
     
     def test_generate_userpassword(self):
-        generate_password = Credentials.generate_password(self)
+        generate_password = Credentials.generate_password(self,10)
         self.assertTrue(generate_password)
     
     def test_display_credentials(self):
          
         self.assertEqual(Credentials.display_credentials(),Credentials.account_credentials)
     
+    def tearDown(self):
+        Credentials.account_credentials = []
+    def test_findbyaccount(self):
+        '''
+        test if credentials can be found using their account name
+        '''
+        self.new_credential.save_credential()
+        newTestcredential = Credentials('Doe','does','facebook')
+        newTestcredential.save_credential()
+        foundcredential = Credentials.find_by_account('facebook')
+        self.assertEqual(foundcredential,newTestcredential)
+
 
 
 

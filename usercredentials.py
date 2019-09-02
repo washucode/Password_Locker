@@ -46,7 +46,7 @@ class Credentials:
     def save_credential(self):
         Credentials.account_credentials.append(self)
     
-    def generate_password(self,number=10):
+    def generate_password(self,number):
         password_gen = string.ascii_letters + string.digits
         user_password = ''.join(random.choice(password_gen) for i in range(number))
         return user_password
@@ -55,5 +55,6 @@ class Credentials:
     def display_credentials(cls):
         return cls.account_credentials
 
+    
     
 
