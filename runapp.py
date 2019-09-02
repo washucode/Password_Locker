@@ -25,4 +25,9 @@ def  save_credential(credential):
     '''
     Credentials.save_credential()
 
+def generate_password():
+    '''
+    Functions that generates random password
+    '''
+    return Credentials.generate_password()
 
