@@ -55,6 +55,10 @@ class  TestCredentials (unittest.TestCase):
         '''
         self.new_credential.save_credential()
         self.assertEqual(len(Credentials.account_credentials),1)
+    
+    def test_generate_userpassword(self):
+        generate_password = Credentials.generate_password(self)
+        self.assertTrue(generate_password)
 
 
 if __name__ == '__main__':

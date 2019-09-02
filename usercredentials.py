@@ -1,4 +1,6 @@
 import pyperclip
+import random
+import string
 global list_user
 
 class users:
@@ -43,6 +45,8 @@ class Credentials:
     
     def save_credential(self):
         Credentials.account_credentials.append(self)
+    
+    
 
     
 
