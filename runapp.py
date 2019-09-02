@@ -19,5 +19,10 @@ def  user_exists(username,password):
     '''
     return Credentials.user_exists(username,password)
 
+def  save_credential(credential):
+    '''
+    Function that saves new credential
+    '''
+    Credentials.save_credential()
 
 
