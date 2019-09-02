@@ -10,7 +10,7 @@ ESTHER WACHUKA
 ## BDD
 | Behaivour           | Short Code Input| Output|
 |--------------------|------------|-----------------|
-| Run App| $./runapp.py|Welcome to Password Locker:choose cc,lg,ex|
+| Start App in terminal | run in terminal: $./runapp.py|Welcome to Password Locker:choose cc or lg or ex|
 | Create Account | Typein: cc |Enter firstname,secondname,username,password|
 | Login |TypeIn: lg| Enter username and password|
 | Successful Login| | Choose cc or dc or de or ex|
