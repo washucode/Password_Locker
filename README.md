@@ -49,8 +49,3 @@ THis is licensed with MIT
 
 ### ACKNOWLEDGMENTS
  Moringa School.
- 
- 
-### CONTACT
-
-Talk to me : estherw8525@gmail.com
